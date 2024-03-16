@@ -111,7 +111,7 @@ int main(void)
     TxBuffer[2] = (uint8_t)(sample & 0xff);
     TxBuffer[3] = (TxBuffer[1]) ^ (TxBuffer[2]);
     HAL_UART_Transmit(&huart1, (uint8_t *)TxBuffer, 4, 100);
-    HAL_Delay(10);
+    HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
